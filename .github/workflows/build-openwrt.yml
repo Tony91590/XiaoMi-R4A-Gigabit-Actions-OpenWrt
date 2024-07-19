@@ -96,13 +96,13 @@ jobs:
         ccache: 'true'
         prefix: ${{ github.workspace }}/openwrt
         
-    - name: Revise mt7621_xiaomi_mi-router-4a-3g-v2.dtsi
-      run: |
-        cp -f mt7621_xiaomi_mi-router-4a-3g-v2.dtsi openwrt/target/linux/ramips/dts
+   # - name: Revise mt7621_xiaomi_mi-router-4a-3g-v2.dtsi
+  #    run: |
+   #     cp -f mt7621_xiaomi_mi-router-4a-3g-v2.dtsi openwrt/target/linux/ramips/dts
         
-    - name: Revise mt7621.mk
-      run: |
-        cp -f mt7621.mk openwrt/target/linux/ramips/image
+  #  - name: Revise mt7621.mk
+  #    run: |
+ #       cp -f mt7621.mk openwrt/target/linux/ramips/image
 
     - name: Load custom feeds
       run: |
